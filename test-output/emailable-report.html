@@ -8,11 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,295</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">564,864</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi</td><td><a href="#m0">fetchCustomers</a></td><td rowspan="1">1611090449760</td><td rowspan="1">2868</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI</td><td><a href="#m0">validateCreateCustomerAPIWithValidData</a></td><td rowspan="1">1611370037606</td><td rowspan="1">2336</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI</td><td><a href="#m1">validateCreateCustomerAPIWithInValidAuthKey</a></td><td rowspan="1">1611370037541</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">validateCreateCustomerAPIWithInValidEmail</a></td><td rowspan="1">1611370466247</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">validateCreateCustomerAPIWithInvalidField</a></td><td rowspan="1">1611370320536</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">validateCreateCustomerAPIWithoutPassingAuthKey</a></td><td rowspan="1">1611370180612</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi#fetchCustomers</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{limit=5, methodType=get, endPoint=customers}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI#validateCreateCustomerAPIWithValidData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a customer is stripe database,account_balance:10000, expectedEmail=testing@yahoo.co.in, endpoint=customers}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [400]
+	at com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(TestCustomerAPI.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI#validateCreateCustomerAPIWithInValidAuthKey</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: java.lang.NegativeArraySizeException: -7
+	at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI#validateCreateCustomerAPIWithInValidEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: java.lang.NegativeArraySizeException: -7
+	at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI#validateCreateCustomerAPIWithInvalidField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: java.lang.NegativeArraySizeException: -7
+	at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI#validateCreateCustomerAPIWithoutPassingAuthKey</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: java.lang.NegativeArraySizeException: -7
+	at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

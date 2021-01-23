@@ -1,58 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-19T16:07:29 EST" name="Default suite" finished-at="2021-01-19T16:07:32 EST" duration-ms="3295">
+  <suite started-at="2021-01-22T21:45:01 EST" name="Suite" finished-at="2021-01-22T21:54:26 EST" duration-ms="564864">
     <groups>
     </groups>
-    <test started-at="2021-01-19T16:07:29 EST" name="Default test" finished-at="2021-01-19T16:07:32 EST" duration-ms="3295">
-      <class name="com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:28 EST" name="beforeSuite" finished-at="2021-01-19T16:07:29 EST" duration-ms="814" status="PASS">
+    <test started-at="2021-01-22T21:45:01 EST" name="Test" finished-at="2021-01-22T21:54:26 EST" duration-ms="564864">
+      <class name="com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:45:00 EST" name="beforeSuite" finished-at="2021-01-22T21:45:01 EST" duration-ms="824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:29 EST" name="beforeClass" finished-at="2021-01-19T16:07:29 EST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:45:01 EST" name="beforeClass" finished-at="2021-01-22T21:45:01 EST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:29 EST" name="beforeMethod" finished-at="2021-01-19T16:07:29 EST" duration-ms="8" status="PASS">
+        <test-method signature="validateCreateCustomerAPIWithInValidAuthKey(java.util.Hashtable)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:47:17 EST" name="validateCreateCustomerAPIWithInValidAuthKey" data-provider="dp" finished-at="2021-01-22T21:47:17 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NegativeArraySizeException: -7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NegativeArraySizeException: -7
+at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithInValidAuthKey -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:47:17 EST" name="beforeMethod" finished-at="2021-01-22T21:47:17 EST" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi.fetchCustomers(java.util.Hashtable)]]>
+                <![CDATA[public void com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(java.util.Hashtable)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="fetchCustomers(java.util.Hashtable)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:29 EST" name="fetchCustomers" data-provider="dp" finished-at="2021-01-19T16:07:32 EST" duration-ms="2868" status="PASS">
+        <test-method signature="validateCreateCustomerAPIWithValidData(java.util.Hashtable)[pri:1, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:47:17 EST" name="validateCreateCustomerAPIWithValidData" data-provider="dp" finished-at="2021-01-22T21:47:19 EST" duration-ms="2336" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{limit=5, methodType=get, endPoint=customers}]]>
+                <![CDATA[{expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a customer is stripe database,account_balance:10000, expectedEmail=testing@yahoo.co.in, endpoint=customers}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:617)
+at com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(TestCustomerAPI.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchCustomers -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:32 EST" name="afterMethod" finished-at="2021-01-19T16:07:32 EST" duration-ms="344" status="PASS">
+        </test-method> <!-- validateCreateCustomerAPIWithValidData -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:47:19 EST" name="afterMethod" finished-at="2021-01-22T21:47:20 EST" duration-ms="499" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fetchCustomers status=SUCCESS method=TestCreateCustomerApi.fetchCustomers(java.util.Hashtable)[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8] output={null}]]]>
+                <![CDATA[[TestResult name=validateCreateCustomerAPIWithValidData status=FAILURE method=TestCustomerAPI.validateCreateCustomerAPIWithValidData(java.util.Hashtable)[pri:1, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi@7975d1d8]" started-at="2021-01-19T16:07:33 EST" name="afterSuite" finished-at="2021-01-19T16:07:33 EST" duration-ms="3" status="PASS">
+        <test-method signature="validateCreateCustomerAPIWithoutPassingAuthKey(java.util.Hashtable)[pri:2, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:49:40 EST" name="validateCreateCustomerAPIWithoutPassingAuthKey" data-provider="dp" finished-at="2021-01-22T21:49:40 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NegativeArraySizeException: -7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NegativeArraySizeException: -7
+at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithoutPassingAuthKey -->
+        <test-method signature="validateCreateCustomerAPIWithInvalidField(java.util.Hashtable)[pri:3, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:52:00 EST" name="validateCreateCustomerAPIWithInvalidField" data-provider="dp" finished-at="2021-01-22T21:52:00 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NegativeArraySizeException: -7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NegativeArraySizeException: -7
+at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithInvalidField -->
+        <test-method signature="validateCreateCustomerAPIWithInValidEmail(java.util.Hashtable)[pri:4, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:54:26 EST" name="validateCreateCustomerAPIWithInValidEmail" data-provider="dp" finished-at="2021-01-22T21:54:26 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NegativeArraySizeException: -7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NegativeArraySizeException: -7
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NegativeArraySizeException: -7
+at com.e7.specFrame.API_FrameWork.TestUtils.DataProviderClass.getData(DataProviderClass.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithInValidEmail -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI@15d49048]" started-at="2021-01-22T21:54:26 EST" name="afterSuite" finished-at="2021-01-22T21:54:26 EST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.e7.specFrame.API_FrameWork.testcases.TestCreateCustomerApi -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.e7.specFrame.API_FrameWork.testcases.TestCustomerAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

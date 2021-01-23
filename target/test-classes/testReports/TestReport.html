@@ -51,7 +51,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 19, 2021 04:07:29 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 22, 2021 09:45:01 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +66,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,7 +78,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>Regression</a></li>
+					<li><a href='#'>Sanity</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -119,10 +119,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -133,10 +133,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -154,27 +154,27 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>TestCreateCustomerApi</span>
-						<span class='test-time'>Jan 19, 2021 04:07:29 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>TestCustomerAPI</span>
+						<span class='test-time'>Jan 22, 2021 09:47:17 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 19, 2021 04:07:29 PM</span>
-	<span class='label end-time'>Jan 19, 2021 04:07:32 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+883ms</span>
+	<span class='label start-time'>Jan 22, 2021 09:47:17 PM</span>
+	<span class='label end-time'>Jan 22, 2021 09:47:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+359ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+	<li class='node level-1 leaf fail' status='fail' test-id='2'>
 		<div class='collapsible-header'>
-			<div class='node-name'>fetchCustomers</div>
-			<span class='node-time'>Jan 19, 2021 04:07:29 PM</span>
-			&middot; <span class='node-duration'>0h 0m 2s+883ms</span>
-			<span class='test-status right pass'>pass</span>
+			<div class='node-name'>validateCreateCustomerAPIWithValidData</div>
+			<span class='node-time'>Jan 22, 2021 09:47:17 PM</span>
+			&middot; <span class='node-duration'>0h 0m 2s+359ms</span>
+			<span class='test-status right fail'>fail</span>
 			<div class='category-list'>
-				<span class='category label'>Regression</span>
+				<span class='category label'>Sanity</span>
 			</div>
 		</div>
 		<div class='collapsible-body'>
@@ -193,25 +193,25 @@
 					<tbody>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:07:29 PM</td>
+							<td class='timestamp'>9:47:17 PM</td>
 							<td class='step-details'>
-									Test Case:- fetchCustomers execution started
+									Test Case:- validateCreateCustomerAPIWithValidData execution started
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:07:29 PM</td>
+							<td class='timestamp'>9:47:17 PM</td>
 							<td class='step-details'>
 									Request Specification set
 								
 							</td>
 						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:07:32 PM</td>
+						<tr class='log' status='fail'>
+							<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+							<td class='timestamp'>9:47:19 PM</td>
 							<td class='step-details'>
-									Test case is pass
+									This test case is failed
 								
 							</td>
 						</tr>
@@ -263,15 +263,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>Regression</span>
+						<span class='category-name'>Sanity</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -285,9 +285,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 19, 2021 04:07:29 PM</td>
-										<td class='linked' test-id='2'>TestCreateCustomerApi.fetchCustomers</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 22, 2021 09:47:17 PM</td>
+										<td class='linked' test-id='2'>TestCustomerAPI.validateCreateCustomerAPIWithValidData</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -325,13 +325,13 @@
 					<div class='author-heading'>
 						<span class='author-name'>Emran</span>
 						<span class='author-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='author-tests'>
@@ -345,9 +345,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 19, 2021 04:07:29 PM</td>
-										<td class='linked' test-id='2'>TestCreateCustomerApi.fetchCustomers</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 22, 2021 09:47:17 PM</td>
+										<td class='linked' test-id='2'>TestCustomerAPI.validateCreateCustomerAPIWithValidData</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -383,19 +383,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 19, 2021 04:07:29 PM</div>
+					<div class='panel-lead'>Jan 22, 2021 09:45:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 19, 2021 04:07:32 PM</div>
+			 		<div class='panel-lead'>Jan 22, 2021 09:47:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+33ms</div>
+					<div class='panel-lead'>0h 2m 18s+631ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -427,12 +427,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>Regression</td>
+							<td>Sanity</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -447,23 +447,23 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				grandChildCount: 0,
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -478,7 +478,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "TestCreateCustomerApi":2.883
+			        "TestCustomerAPI":2.359
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
